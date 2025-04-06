@@ -62,7 +62,7 @@ input:hover, textarea:hover {
 }
 
 input:focus, textarea:focus {
-  border-color: #f06449;
+  border-color: red;
 }
 
 .container {
@@ -157,11 +157,16 @@ nav,
   background-color: #242424;
 }
 .dark-theme #personal-logo {
-  filter: none;
+  filter: invert(1);
 }
 .dark-theme .scroll__icon {
   border-color: white;
 }
+
+.dark-theme footer {
+    filter: invert(1);
+} 
+
 .dark-theme .scroll__icon:after,
 .dark-theme .link__hover-effect--black:after {
   background-color: white;
@@ -201,7 +206,7 @@ nav,
 }
 
 .social__link {
-  background-color: #f06449;
+  background-color: red;
   color: white;
   padding: 6px;
   width: 32px;
@@ -211,7 +216,7 @@ nav,
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 20px 20px 20px 0;
 }
 
 .mail__btn {
